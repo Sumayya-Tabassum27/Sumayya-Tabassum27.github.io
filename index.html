@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sumayya Tabassum – Portfolio</title>
+<style>
+:root{
+  --bg:#f5f7fb;--surface:#ffffff;--text:#17233a;--muted:#53627c;--accent:#17727f;--navy:#1f3864;
+  --border:#dde4ee;--chip:#e6f2f4;--btn-text:#ffffff;
+  color-scheme:light dark;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0e1523;--surface:#172033;--text:#e8edf6;--muted:#a6b3ca;--accent:#55c7d4;--navy:#a9c1ee;--border:#27334d;--chip:#1c2a40;--btn-text:#0e1523}
+}
+:root[data-theme="dark"]{--bg:#0e1523;--surface:#172033;--text:#e8edf6;--muted:#a6b3ca;--accent:#55c7d4;--navy:#a9c1ee;--border:#27334d;--chip:#1c2a40;--btn-text:#0e1523}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header.hero{padding:56px 0 36px}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
+h1{margin:.3em 0 .25em;font-size:clamp(2rem,6vw,3.1rem);line-height:1.1;color:var(--navy)}
+.lead{font-size:1.2rem;max-width:36em;margin:0 0 .6em}
+.sub{color:var(--muted);margin:0 0 1.4em}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 18px;border-radius:999px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600}
+.btn.primary{background:var(--accent);color:var(--btn-text)}
+section{padding:26px 0}
+h2{font-size:1.4rem;margin:0 0 .8em;color:var(--navy);border-bottom:2px solid var(--accent);display:inline-block;padding-bottom:4px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr))}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px;display:flex;flex-direction:column}
+.tag{font-size:.78rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+.card h3{margin:.2em 0 .4em;font-size:1.15rem;color:var(--navy)}
+.q{color:var(--muted);margin:0 0 .8em;font-style:italic}
+.stat{display:flex;align-items:baseline;gap:10px;margin:.2em 0 .6em}
+.stat b{font-size:2rem;line-height:1;color:var(--accent)}
+.stat span{color:var(--muted);font-size:.92rem}
+.card p.t{margin:0 0 1em}
+.card a.link{margin-top:auto;font-weight:600;color:var(--accent)}
+.card .nolink{margin-top:auto;color:var(--muted);font-size:.9rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--chip);color:var(--text);border-radius:999px;padding:5px 14px;font-size:.92rem}
+.how{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.how div{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+.how strong{display:block;color:var(--navy);margin-bottom:2px}
+a{color:var(--accent)}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.9rem}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes shine{to{background-position:200% center}}
+@keyframes float{50%{transform:translate(-28px,26px) scale(1.1)}}
+@media (prefers-reduced-motion:no-preference){
+header.hero{position:relative;overflow:hidden}
+header.hero>*{position:relative}
+header.hero::before{content:"";position:absolute;right:-70px;top:-50px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,var(--accent),transparent 65%);opacity:.2;animation:float 9s ease-in-out infinite}
+.hero .eyebrow,.hero h1,.hero .lead,.hero .sub,.hero .btns{animation:up .7s ease-out backwards}
+.hero .lead{animation-delay:.26s}.hero .sub{animation-delay:.4s}.hero .btns{animation-delay:.54s}
+@supports (-webkit-background-clip:text){.hero h1{background:linear-gradient(90deg,var(--navy),var(--accent),var(--navy));background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:up .7s ease-out .12s backwards,shine 6s linear infinite}}
+.js .reveal{opacity:0}
+.js .reveal.in{opacity:1;animation:up .6s ease-out backwards}
+.card{transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(15,25,45,.15);border-color:var(--accent)}
+.chips li{transition:transform .2s}.chips li:hover{transform:translateY(-3px) scale(1.05)}
+.btn{transition:transform .2s}.btn:hover{transform:translateY(-2px)}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  
+  <h1>Sumayya Tabassum</h1>
+  <p class="lead">I turn messy business data into clear findings using Excel, SQL and Power BI.</p>
+  <p class="sub">B.Sc. in Mathematics, Statistics and Data Science · Open to roles in Hyderabad or remote</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:sum.27yah@gmail.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/sumayya-tabassum-b782b1344" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/Sumayya-Tabassum27" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+
+    <article class="card">
+      <div class="tag">Excel</div>
+      <h3>Online Retail Sales Analysis</h3>
+      <p class="q">Which markets drive revenue for an online retailer?</p>
+      <div class="stat"><b data-to="91" data-suffix="%">91%</b><span>of revenue came from the UK (10,000-row sample)</span></div>
+      <p class="t">Linked Orders, Products and Customers sheets with VLOOKUP, XLOOKUP and INDEX-MATCH, then summarised revenue by country in a pivot table and chart.</p>
+      <a class="link" href="https://1drv.ms/x/c/cd3ff2a65e9fdea0/IQAKXdI4_IseQZvNQUSLQYkWAcv-JnUXVvCR1TTnJU1q_3I?e=YFNvWA" target="_blank" rel="noopener">View the workbook →</a>
+    </article>
+
+    <article class="card">
+      <div class="tag">SQL</div>
+      <h3>Chinook Music Store SQL Analysis</h3>
+      <p class="q">Who are the best customers, and which tracks sell most?</p>
+      <div class="stat"><b data-to="59">59</b><span>customers spent above the average</span></div>
+      <p class="t">Queried an 11-table database using JOINs, a subquery, GROUP BY/HAVING and a LEFT JOIN check. The USA was the top market ($523 across 91 invoices).</p>
+      <a class="link" href="https://github.com/Sumayya-Tabassum27/chinook-sql-analysis" target="_blank" rel="noopener">View on GitHub →</a>
+    </article>
+
+    <article class="card">
+      <div class="tag">Power BI</div>
+      <h3>Movie Industry Analysis</h3>
+      <p class="q">Which genres and directors earn the most, and do ratings predict revenue?</p>
+      <div class="stat"><b>Adventure</b><span>was the top genre by revenue</span></div>
+      <p class="t">Joined movie and credits tables, pulled genres and directors out of nested JSON in Power Query, and built a dashboard with a DAX measure. Ratings showed no strong link to box office. Genre totals overlap because a film can have several genres, so I documented that limitation.</p>
+      <a class="link" href="https://1drv.ms/b/c/cd3ff2a65e9fdea0/IQDSm-KtlSH2SIXj3N_SQ7VAAbsrU-gVa_ZeTVvn2zOCosg?e=DhZBzY" target="_blank" rel="noopener">View the dashboard →</a>
+    </article>
+
+    <article class="card">
+      <div class="tag">Google Sheets</div>
+      <h3>Superstore Sales Dashboard</h3>
+      <p class="q">Which regions and customer segments drive sales?</p>
+      <div class="stat"><b data-to="9800">9,800</b><span>orders cleaned and validated</span></div>
+      <p class="t">Removed duplicates, handled missing values and fixed whitespace errors in 31 cells, then built 4 pivot tables, KPIs and a chart dashboard. Technology and the West region led sales.</p>
+      <a class="link" href="https://docs.google.com/spreadsheets/d/1AmJY8Vlr-PknH4Ft4PjaWHnxdQnJmp2262RGcyhm1Z0/edit?usp=sharing" target="_blank" rel="noopener">View the dashboard →</a>
+    </article>
+
+  </div>
+</section>
+
+<section>
+  <h2>How I work</h2>
+  <div class="how">
+    <div><strong>I check data first</strong>I clean and validate it before I report anything.</div>
+    <div><strong>I explain in plain language</strong>Findings should make sense to someone who didn’t build the analysis.</div>
+    <div><strong>I state the limits</strong>If a number can mislead, I write down why.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <ul class="chips">
+    <li>Excel</li><li>SQL</li><li>Power BI</li><li>Google Sheets</li><li>Power Query</li><li>DAX</li>
+    <li>Data cleaning</li><li>Data validation</li><li>Pivot tables</li><li>Dashboards</li>
+    <li>Python (learning pandas)</li><li>Word</li><li>PowerPoint</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <p><strong>B.Sc. in Mathematics, Statistics and Data Science</strong><br>Nizam College · 2023 – 2026</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:sum.27yah@gmail.com">sum.27yah@gmail.com</a><br>
+  LinkedIn: <a href="https://www.linkedin.com/in/sumayya-tabassum-b782b1344" target="_blank" rel="noopener">linkedin.com/in/sumayya-tabassum-b782b1344</a><br>
+  GitHub: <a href="https://github.com/Sumayya-Tabassum27" target="_blank" rel="noopener">github.com/Sumayya-Tabassum27</a></p>
+</section>
+
+<footer>© Sumayya Tabassum</footer>
+</div>
+<script>
+(function(){
+  var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(rm||!('IntersectionObserver' in window)){document.documentElement.classList.remove('js');return;}
+  var els=document.querySelectorAll('.card,.how div,h2,.chips li');
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.15});
+  els.forEach(function(e,i){e.classList.add('reveal');e.style.animationDelay=((i%4)*0.07)+'s';io.observe(e);});
+  document.querySelectorAll('b[data-to]').forEach(function(b){
+    var to=+b.dataset.to,suf=b.dataset.suffix||'',done=false;
+    var o=new IntersectionObserver(function(es){
+      if(es[0].isIntersecting&&!done){done=true;var t0=null;
+        (function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/1200,1);var v=Math.round(to*(1-Math.pow(1-p,3)));
+          b.textContent=v.toLocaleString('en-IN')+suf;if(p<1)requestAnimationFrame(step);})(performance.now());}
+    },{threshold:.5});
+    o.observe(b);
+  });
+})();
+</script>
+</body>
+</html>
